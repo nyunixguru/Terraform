@@ -1,4 +1,4 @@
 terraform.tfplan
 terraform.tfstate
 terraform.tfstate.backup
-.terraform/plugins/*
+.terraform/
