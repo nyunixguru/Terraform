@@ -5,15 +5,33 @@ Add /home/david to PATH
 
 
 
-
+--------------------------------------------------------------
 #exporting aws credentials to Terraform
 
 
 $ export AWS_ACCESS_KEY_ID="anaccesskey"
 $ export AWS_SECRET_ACCESS_KEY="asecretkey"
-$ export AWS_DEFAULT_REGION="us-west-2"
+$ export AWS_DEFAULT_REGION="us-east-1"
+--------------------------------------------------------------
+provider "aws" {
+region                  = "us-east-1"
+}
 
+--------------------------------------------------------------
 
-provider "aws" {}
-
-$ terraform plan
+Add to Terraform/.gitignore
+.plugins
+terraform.tfplan
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.git/
+----------------------------------------------------------------
+Create new project
+Initialize new project directory
+create subdirectory
+Add provider.tf and main.tf files into it
+terraform init
+terraform plan
+terraform apply
+terraform destroy
