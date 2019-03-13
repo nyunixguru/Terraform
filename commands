@@ -3,7 +3,7 @@ Download terraform binary from terraform.io
 unzip  Downloads/terraform_0.11.11_linux_amd64.zip installs into ~
 Add ~ to PATH in .bashrc
 --------------------------------------------------------------
-#Exporting aws credentials to Terraform
+#Exporting aws credentials to Terraform (must have AWS CLI installed)
 
 $ export AWS_ACCESS_KEY_ID="anaccesskey"
 $ export AWS_SECRET_ACCESS_KEY="asecretkey"
